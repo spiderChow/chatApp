@@ -1,0 +1,80 @@
+<div id="create-rooms" class="my-3 p-3 bg-white rounded shadow-sm chat-app-blocks">
+    <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Create a room</h4>
+        <form class="needs-validation" id="room-creation-form">
+            <!-- name -->
+             <div class="mb-3">
+                <label for="roomName">room name</label>
+                <input type="text" class="form-control" id="roomName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                    Valid name is required.
+                </div>
+             </div> <!-- name -->
+
+            <!-- introduction -->
+            <div class="mb-3">
+                <label for="introduction">one sentence introduction <span class="text-muted">(Optional)</span></label>
+                <input type="text" class="form-control" id="introduction" placeholder="">
+            </div> <!-- introduction -->
+
+            <!--school-->
+            <div class="mb-3">
+                <label for="school">School</label>
+                <select class="custom-select d-block w-100" id="school" >
+                    <option value="">Choose...</option>
+                    <option value="rice">Rice</option>
+                    <option value="cmu">CMU</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid school.
+                </div>
+            </div> <!--school-->
+
+            <!--location-->
+            <div class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0">Location</legend>
+                <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input location_checkbox" type="checkbox" id="africa" value="africa">
+                        <label class="form-check-label" for="africa">Africa</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input location_checkbox" type="checkbox" id="europe" value="europe">
+                        <label class="form-check-label" for="europe">Europe</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input location_checkbox" type="checkbox" id="asia" value="asia">
+                        <label class="form-check-label" for="asia">Asia</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input location_checkbox" type="checkbox" id="north-america" value="north-america">
+                        <label class="form-check-label" for="north-america">North America</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input location_checkbox" type="checkbox" id="south-america" value="south-america">
+                        <label class="form-check-label" for="south-america">South America</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input location_checkbox" type="checkbox" id="australia" value="australia">
+                        <label class="form-check-label" for="australia">Australia</label>
+                    </div>
+                </div>
+            </div> <!--location-->
+
+            <!--       age         -->
+            <div class="row mb-3">
+                <div class="col-md-4">
+                    <label for="lowest-age">Lowest Age<span class="text-muted">(Optional)</span></label>
+                    <input type="number" class="form-control" id="lowest-age" placeholder="">
+                </div>
+                <div class="col-md-4">
+                    <label for="highest-age">Highest Age<span class="text-muted">(Optional)</span></label>
+                    <input type="number" class="form-control" id="highest-age" placeholder="">
+                </div>
+            </div>    <!--       age         -->
+
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit" id="submit-room-creation">Create this room</button>
+        </form>
+    </div>
+</div>
